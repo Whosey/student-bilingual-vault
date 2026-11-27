@@ -1,0 +1,10 @@
+{
+  "alwaysUpdateLinks": true,
+  "newLinkFormat": "absolute",
+  "newFileLocation": "folder",
+  "newFileFolderPath": "我的学习/笔记",
+  "attachmentFolderPath": "我的学习/附件",
+  "defaultViewMode": "preview",
+  "showInlineTitle": false,
+  "propertiesInDocument": "hidden"
+}

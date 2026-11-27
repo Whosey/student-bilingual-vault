@@ -1,0 +1,17 @@
+filters:
+  and:
+    - 'file.inFolder("我的学习/课程")'
+    - 'note.kind == "course"'
+formulas:
+  course_link: 'file.asLink(note.title)'
+properties:
+  formula.course_link:
+    displayName: 课程
+views:
+  - type: table
+    name: 我的课程
+    order:
+      - formula.course_link
+    sort:
+      - property: note.title
+        direction: ASC

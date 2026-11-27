@@ -1,0 +1,23 @@
+filters:
+  and:
+    - 'note.kind == "reading"'
+    - 'note.course == this.file'
+formulas:
+  reading_link: 'file.asLink(note.title)'
+properties:
+  formula.reading_link:
+    displayName: 中英对照
+  note.status:
+    displayName: 翻译状态
+  note.page_count:
+    displayName: 页数
+views:
+  - type: table
+    name: 课程资料
+    order:
+      - formula.reading_link
+      - note.status
+      - note.page_count
+    sort:
+      - property: note.title
+        direction: ASC
